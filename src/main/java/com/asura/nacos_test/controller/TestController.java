@@ -20,7 +20,7 @@ public class TestController {
 
     @RequestMapping("/config")
     public Object allConfig() {
-        return new HashMap<>(2) {
+        return new HashMap<Object, Object>(2) {
             {
                 put("useLocalCache", useLocalCache);
                 put("name", name);
